@@ -1,0 +1,1296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.bg-button { background: #646475!important; }
+.text-check { color: rgba(255, 255, 255, 0.8)!important; }
+.text-checkbox { color: #F51A54!important; }
+.q-checkbox__svg { color: #000!important; }
+div#q-loading-bar { display: none!important; }
+::-webkit-scrollbar { display: none!important; }
+.q-card { background: rgb(35, 34, 56)!important; }
+p { margin: 0 !important; }
+.q-btn { align-items: center!important; }
+.text-h6 { color: #fff; }
+.q-card__section.q-card__section--vert.q-pt-none { color: #fff; }
+
+@media screen and (min-width: 2540px) {
+    #itembox-label {
+        min-height: 1.8vh;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+
+:root {
+    --main-label-color: 38, 41, 60;
+}
+
+.fas.fa-lock {
+    font-size: 22px;
+    top: -82px;
+    right: 0px;
+    position: relative;
+}
+
+.brand-logo {
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 3px;
+    padding-bottom: 10px;
+    width: 45%;
+}
+
+.human-logo {
+    position: relative; 
+    right: -49%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    /* padding-top: 3px;
+    padding-bottom: 10px; */
+    width: 90%;
+    height: 90%;
+    z-index: 2000;
+}
+
+/* .htrp-logo{
+    position: relative; 
+    right: -247%;
+    bottom: -520px; */
+    /* top: 455px; */
+    /* transform: translateX(-50%);
+    width: 40%;
+    height: 0%;
+    rotate: 3deg;
+    z-index: -9000;
+
+} */
+.logo{
+    position: relative; 
+    right: -250%;
+    bottom: -520px;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 0%;
+    rotate: 3deg;
+    z-index: -9000;
+}
+
+::placeholder {
+    color: white;
+    text-align: center;
+    line-height: 48px;
+    text-transform: normal;
+    font-size: 1.5vh;
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+/* rgb() */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+#progressbar {
+    width: 124.6%;
+    margin-left: 104%;
+    margin-top: 6.8%;
+    background-color: #252525;
+    z-index: -100 !important;
+}
+
+#progressbar-other {
+    width: 120%;
+    margin-left: 72%;
+    margin-top: 73%;
+    background-color: #252525;
+    rotate: -90deg;
+    z-index: -100 !important;
+}
+
+.pro {
+    background: rgb(245,26,84);
+    background: linear-gradient(90deg, rgba(245,26,84,1) 0%, rgba(245,26,84,1) 100%);
+    height: 10px;
+    max-width: 100%;
+    transition: width 1s, background-color 1s;
+}
+
+.pro1 {
+    background: rgb(245,26,84);
+    background: linear-gradient(90deg, rgba(245,26,84,1) 0%, rgba(245,26,84,1) 100%);
+    height: 10px;
+    max-width: 100%;
+    transition: width 1s, background-color 1s;
+}
+
+.weight-img {
+    margin-top: 0.6%;
+    width: 4%;
+    right: -14%;
+    position: absolute;
+}
+
+.weight-img-other {
+    margin-top: 0.6%;
+    width:4%;
+    right: -12%;
+    position:absolute;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#qbcore-inventory {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0vw;
+    display: none;
+    user-select: none;
+}
+
+.inv-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,0) 0%, rgba(245,26,84,0.3895308123249299) 100%);
+}
+
+.inv-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.player-inventory-bg {
+    position: absolute;
+    float: left;
+    top: 10%;
+    left: 2.2%;
+    width: 41%;
+    max-width: 41%;
+    height: 75%;
+    max-height: 81%;
+    background: rgba(35, 34, 56, 0);
+}
+
+.player-inventory {
+    position: absolute;
+    top: 8%;
+    left: 75.35%;
+    width: 96.22%;
+    max-width: 102.22%;
+    height: 82.4%;
+    max-height: 132%;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 9000;
+
+}
+
+.other-inventory-bg {
+    position: absolute;
+    top: 10%;
+    float: right;
+    right: 2.2%;
+    margin: 0 auto;
+    width: 10%;
+    max-width: 41%;
+    height: 75%;
+    max-height: 81%;
+    background: rgba(35, 34, 56, 0);
+}
+
+.other-inventory {
+    position: absolute;
+    top: 8%;
+    right: 1.5%;
+    width: 96.22%;
+    max-width: 102.22%;
+    height: 82.4%;
+    max-height: 132%;
+    float: right;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+.ply-hotbar-inventory {
+    position: absolute;
+    bottom: 10%;
+    left: 35.5%;
+    z-index: 105;
+    
+}
+
+.player-inventory > .item-slot > .item-slot-key > p {
+    position: absolute;
+    font-weight: 400;
+    color: hsl(0deg 0% 0% / 15%);
+    padding-top: 5.7vh;
+    padding-bottom: 0px;
+    padding-left: 3.95vh;
+    text-align: left;
+    font-size: 7vh;
+    line-height: 1.8vh;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.inv-options {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-left: 73%;
+    margin-top: 28%;
+    background: rgba(0, 0, 0, 0);
+    right: 0px;
+    width: 11%;
+    left: 3vh;
+    cursor: pointer; /* Can also be 'none' however, as these are the buttons I feel as the pointer fits better */
+}
+
+.combine-option-container {
+    display: none;
+    position: relative;
+    right: 0px;
+    width: auto;
+    left: 0vh;
+    margin: 0px auto;
+    z-index: 9900;
+
+}
+
+.item-slot {
+    position: relative;
+    width: 12.5vh;
+    height: 12vh;
+    float: left;
+    background-color: rgb(102 102 113 / 30%) !important;
+    margin: 2px;
+    transition: opacity 0.2s ease 0s;
+}
+
+.item-slot:hover {
+    background-color: rgba(56, 48, 48, 0.3) !important;
+    
+}
+
+.inv-option-item {
+    margin-top: 10%;
+    
+}
+
+.btn-inv {
+    width: 100%!important;
+    max-width: 100%!important;
+    padding: 10%!important;
+    background-color: rgba(235, 235, 235, 0);
+    
+    
+}
+
+#item-amount {
+    color: white;
+    text-align: center;
+    font-size: 1.5vh;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif !important;
+    outline: none;
+    z-index: 4000;
+    
+    
+}
+
+.ammo-info-block {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 22vh;
+    height: 11vh;
+    background-color: rgba(235, 235, 235, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    top: 2vh;
+}
+.ammo-info-header {
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+    background-color: rgba(0, 0, 0, 0.192);
+    font-size: 1.vh;
+    padding: .4vh;
+    text-align: center;
+}
+.ammo-info {
+    position: relative;
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 200;
+    font-size: 1.vh;
+    margin-left: .8vh;
+    margin-top: .4vh;
+    margin-bottom: .25vh;
+    top: .6vh;
+    
+}
+.ammo-info span {
+    margin-right: 1vh;
+    float: right;
+}
+
+.inv-option-item > p {
+    color: white;
+    text-align: center;
+    line-height: 48px;
+    text-transform: normal;
+    font-size: 1.5vh;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif !important;
+    
+}
+.text-inv{
+    position: relative;
+    color: white;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 600;
+    letter-spacing: 0.01vh;
+    left: 50px;
+    top: 40px;
+    float: left;
+    text-transform: uppercase;
+    cursor: none;
+    
+}
+
+#item-amount{
+    margin-top: 90%;
+    margin-left: -20px;
+    width: 140%;
+    height: 4.5%;
+    background-color: rgba(255, 255, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+
+}
+#item-use{
+    width: 70%;
+    margin-left: -20px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#item-use:hover {
+    background: rgb(74,245,26);
+    background: linear-gradient(90deg, rgba(74,245,26,1) 0%, rgba(184,245,26,1) 100%);
+}
+
+#item-give{
+    margin-top: -26.5%;
+    margin-left: 115px;
+    width: 70%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#item-give:hover {
+    background: rgb(245,26,26);
+    background: linear-gradient(90deg, rgba(245,26,26,1) 0%, rgba(245,217,26,1) 100%);
+}
+
+#inv-close{
+    background-color: rgb(255, 0, 0);
+    margin-top: -780px;
+    margin-left: 300px;
+    width: 50%;
+    height:4.6%;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#inv-close:hover {
+    background: rgb(0, 0, 0);
+}
+
+.inv-option-item {
+    color: white;
+    border: white 1px;
+    transition: background-color .1s linear;
+    /* padding-top:12px ; */
+    z-index: 99999;;
+}
+
+.btn-combine {
+    position: relative;
+    margin-top: 6px;
+    width: auto;
+    top: 0px;
+    left: 0px;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.6416316526610644) 0%, rgba(0,0,0,0.9581582633053222) 100%) !important;
+    text-align: center;
+    line-height: 48px;
+    font-size: 1.2vh;
+    font-weight: 900;
+    font-family: Roboto, sans-serif !important;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(252, 250, 250);
+    border-image: initial;
+    transition: background-color 0.1s linear 0s;
+}
+
+.btn-combine > p {
+    color: white;
+    text-align: center;
+    font-size: 1.5vh;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif !important;
+    outline: none;
+
+}
+
+.item-slot-amount {
+    position: absolute;
+    bottom: 0.8vh;
+    left: 0.55vw;
+    
+    
+}
+
+.item-slot-amount > p {
+    color: #ffffff;
+    text-align: right;
+    font-size: 1.25vh;
+    font-weight: 400;
+    cursor: none;
+}
+
+.item-slot-amount > p:after {
+    content: "x";
+}
+
+.item-slot-name {
+    position: absolute;
+    bottom: 0.8vh;
+    right: 0.55vw;
+    
+}
+
+.item-slot-name > p {
+    color: #ffffff;
+    text-align: right;
+    font-size: 1.25vh;
+    font-weight: 400;
+    cursor: none;
+}
+
+.item-slot-label {
+    position: absolute;
+	bottom: 0;
+	width: 100%;
+	top:0px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid rgb(255, 255, 255);
+    
+}
+
+.item-slot-label > p {
+    font-weight: 400;
+    padding: 2.5px;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 0);
+    font-size: 1.3vh;
+    text-align: left;
+    letter-spacing: 0px;
+    font-family: 'Roboto', sans-serif !important;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: none;
+    
+}
+
+.item-slot-quality {
+    position: absolute;
+    bottom: 0.2vh;
+    width: 100%;
+    height: 0.2vh;
+    background-color: rgb(255, 0, 0) !important;
+    
+    
+}
+
+.item-slot-quality-bar {
+    position: absolute;
+    width: 0%;
+    /* top: 1px; */
+    height: 150%;
+    z-index: 1;
+    background-color: rgb(255, 255, 255) !important;
+    
+}
+
+.item-slot-quality p {
+    color: transparent;
+    
+}
+
+.item-slot-img {
+    max-width: 70%;
+    max-height: 70%;
+    align-items: center;
+
+
+
+}
+
+.item-slot-img img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 28%;
+    margin-left: 28%;
+    width: auto;
+    height: auto;
+    max-width: 92%;
+    max-height: 100%;
+     
+}
+
+.item-slot-img-itembox img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2vh;
+    width: auto;
+    height: auto;
+    max-width: 75%;
+    max-height: 100%;
+    
+}
+
+.item-slot-img2 img {
+    display:block;
+}
+
+.ui-draggable-dragging {
+    background: rgba(0, 0, 0, 0.3);
+    
+}
+
+.player-inv-info {
+    position: absolute;
+    left: 3.3%;
+    top: 8.6%;
+    width: 28.8%;
+    z-index: 1000;
+    cursor: none;
+    
+}
+
+#player-inv-label {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 600;
+    letter-spacing: 0.01vh;
+    left: 580px;
+    top: 25px;
+    float: left;
+    text-transform: uppercase;
+    cursor: none;
+      
+}
+
+#player-inv-weight {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif !important;
+    letter-spacing: 0.1vh;
+    bottom: 40px;
+    right: -128%;
+    float: right;
+}
+
+#other-inv-label {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.01vh;
+    left: 30vw;
+    top: 25px;
+    float: left;
+    text-transform: normal;
+    cursor: none;
+
+}
+
+
+#other-inv-weight {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif !important;
+    letter-spacing: 0.1vh;
+    top: -33vh;
+    right: -26.5%;
+    float: right;
+    cursor: none;
+}
+
+.player-inv-weight {
+    position: absolute;
+    left: 38%;
+    top: 10%;
+}
+
+.player-inv-weight > p {
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.other-inv-info {
+    position: absolute;
+    left: 58.3%;
+    top: 8.6%;
+    width: 28.8%;
+    z-index: 1000;
+}
+
+.ply-iteminfo-container {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.6416316526610644) 0%, rgba(0,0,0,0.9581582633053222) 100%);
+    border-radius: 3px;
+    color: rgba(220, 220, 220, 1);
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    font-size: 1.35vh;
+    font-weight: 0;
+    left: 41%;
+    max-height: 25%;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 1%;
+    pointer-events: none;
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    transition: opacity 0.6s ease;
+    width: 13%;
+    z-index: 10000;
+}
+
+.item-info-title {
+    text-transform: normal;
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 2.4vh;
+    letter-spacing: 0.3px;
+    line-height: 1;
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.item-info-line {
+    position: absolute;
+    font-family: 'Roboto', sans-serif !important;
+    width: 85%;
+    background-color: #6d6d6d96;
+    height: 0.13vh;
+}
+
+.item-info-description {
+    text-transform: normal;
+    font-size: 1.4vh;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+    font-family: 'Roboto', sans-serif !important;
+    color: white;
+    padding-left: 5px;
+    padding-top: .5vh;
+}
+
+.itemboxes-container {
+    height: 140px;
+    min-width: 129px;
+    max-width: 80vh;
+    width: fit-content;
+    position: absolute;
+    left: 47%;
+    bottom: 20%;
+    overflow: hidden;
+    
+}
+
+.template {
+    display: none;
+}
+
+.itembox-container {
+    display: none;
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    margin-right: 1vh;
+    margin-top: 10px;
+    width: 10vh;
+    height: 11vh;
+    border: white solid 1px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0) 0%, rgba(0,0,0,0.25003504819896705) 100%);
+    
+}
+
+#itembox-action {
+    position: absolute;
+    color: white;
+    border-top-left-radius: 1px;
+    padding: 4px;
+    top: 0;
+    left: 0;
+    
+}
+
+#itembox-action > p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif !important;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#rob-money{
+    border: white 1px solid;
+    margin-top: 750px;
+    margin-left: 35px;
+    width: 270px;
+    margin-left:-20px;
+    text-align: center;
+    z-index: 99999;
+}
+
+#rob-money:hover {
+    background-color: black;
+    border: white 1px solid;
+    margin-top: 750px;
+    margin-left: 35px;
+    width: 270px;
+    margin-left:-20px;
+    text-align: center;
+    z-index: 99999;
+}
+
+
+#itembox-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* background-color: #ffffff; */
+    height: 0.3vh;
+}
+
+.itembox-image {
+    max-width: 10%;
+    max-height: 100%;
+    padding: 0.10vw;
+    
+}
+
+#itembox-label > p {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    top: -25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.requiredItem-container {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.requiredItem-box {
+    position: relative;
+    top: 70%;
+    left: 42%;
+    width: 10vh;
+    height: 11vh;
+    float: left;
+    margin-left: 20px;
+    border: white solid 1px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0) 0%, rgba(0,0,0,0.25003504819896705) 100%);
+    
+}
+
+#requiredItem-action {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    padding: 3px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#requiredItem-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* background-color: #F51A54; */
+    height: 0.3vh;
+}
+
+#requiredItem-label > p {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    top: -25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.item-slot-img-itembox-test img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1.3vh;
+    width: 80px;
+    height: 80px;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.z-hotbar-inventory {
+    display: none;
+    position: absolute;
+    bottom: 1%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    z-index: 105;
+}
+
+.z-hotbar-inventory > .z-hotbar-item-slot > .z-hotbar-item-slot-key > p {
+    position: absolute;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.15);
+    padding-top: 5.7vh;
+    padding-bottom: 0px;
+    padding-left: 4vh;
+    text-align: left;
+    font-size: 6vh;
+    line-height: 0.5vh;
+    font-family: Roboto, sans-serif !important;
+    z-index: -1;
+    
+}
+
+.z-hotbar-item-slot {
+    position: relative;
+    width: 11.5vh;
+    height: 12vh;
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin: 3px;
+    transition: opacity 0.2s;
+    opacity: 1.0;
+    background-color: rgb(102 102 113 / 30%);
+    z-index: 9999;
+    border: 1px solid white;
+}
+
+.z-hotbar-item-slot-amount {
+    position: absolute;
+    bottom: 0.8vh;
+    left: 0.55vw;
+}
+
+.z-hotbar-item-slot-amount > p {
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+}
+
+.z-hotbar-item-slot-amount > p:after {
+    content: "x";
+}
+
+.z-hotbar-item-slot-amount-name {
+    position: absolute;
+    bottom: 0.8vh;
+    right: 0.55vw;
+}
+
+.z-hotbar-item-slot-amount-name > p {
+    color: #ffffff;
+    text-align: right;
+    font-size: 14px;
+}
+
+.z-hotbar-item-slot-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    min-height: 2.2vh;
+    height: fit-content;
+}
+
+.z-hotbar-item-slot-label > p {
+    color: rgb(247, 247, 247);
+    font-size: 11.5px;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: 'Roboto', sans-serif !important;
+    font-variant: small-caps;
+}
+
+.z-hotbar-item-slot-img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.5vw;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.z-hotbar-item-slot-img img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 9%;
+    left: -16%;
+    width: auto;
+    height: auto;
+    max-width: 105px;
+    max-height: 100%;
+}
+
+.ammo-container {
+    position: absolute;
+    background-color: rgba(38, 0, 255, 0.2);
+    width: 3.25%;
+    height: 44.16%;
+    top: 26%;
+    left: 6%;
+}
+
+.ammo-container-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(120, 10, 19, 0.997);
+    text-align: center;
+    color: rgba(216, 216, 216, 0.897);
+}
+
+.ammo-container-header > i {
+    line-height: 5vh;
+    font-size: 1.8vh;
+}
+
+.ammo-box {
+    position: relative;
+    width: 100%;
+    height: 6vh;
+    top: 5vh;
+    background-color: rgba(0, 0, 0, .4);
+    margin-bottom: .5vh;
+    margin-top: .5vh;
+}
+
+.ammo-box > img {
+    position: absolute;
+    top: .15vh;
+    left: .2vh;
+    width: 5.25vh;
+    opacity: .25;
+}
+
+.ammo-box > span {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: .93vh;
+    bottom: 0;
+    right: 0;
+    margin: .3vh;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.ammo-box-amount {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(36, 36, 36, 0.4);
+    bottom: 0;
+    max-height: 100%;
+    
+}
+
+#pistol_ammo > .ammo-box-amount {
+    height: 0%;
+}
+
+#smg_ammo > .ammo-box-amount {
+    height: 0%;
+}
+
+#shotgun_ammo > .ammo-box-amount {
+    height: 0%;
+}
+
+#rifle_ammo > .ammo-box-amount {
+    height: 0%;
+}
+
+/* Weapon Attachments */
+
+.weapon-attachments-container {
+    position: absolute;
+    left: -100vw;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.weapon-attachments-container-title {
+    position: absolute;
+    margin: 5vh;
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif !important;
+
+}
+
+.weapon-attachments-container-description {
+    position: absolute;
+    margin: 5vh;
+    top: 5vh;
+    font-size: 1.7vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.weapon-attachments-container-details {
+    position: absolute;
+    margin: 5vh;
+    top: 9vh;
+    font-size: 1.4vh;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.weapon-attachments-container-detail-durability {
+    height: 1.5vh;
+    width: 10vh;
+    background-color: #ff0000;
+    border-radius: 1px;
+}
+
+.weapon-attachments-container-detail-durability-total {
+    height: 1%;
+    width: 50%;
+    background-color: #ff0000;
+    
+}
+
+.weapon-attachments-container-image {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 32%;
+    width: 30%;
+}
+
+.weapon-attachments {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 5vh;
+    width: 50vh;
+    height: 12.5vh;
+    z-index: 9900;
+}
+
+.weapon-attachments-title {
+    position: absolute;
+    bottom: 14vh;
+    left: 0;
+    margin: 5vh;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 1.4vh
+}
+
+.weapon-attachment {
+    position: relative;
+    height: 40.5vh;
+    width: 10.5vh;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.6416316526610644) 0%, rgba(0,0,0,0.9581582633053222) 100%);
+    border: 1px solid rgb(75, 75, 75);
+    margin-right: 1vh;
+    float: left;
+    transition: .05s linear;
+    z-index: 99999900;
+}
+
+.weapon-attachment:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgb(29, 29, 29);
+    transition: .05s linear;
+    z-index: 9900;
+    
+}
+
+.weapon-attachment-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* background-color: rgba(var(--main-label-color), 0.3); */
+    padding: 2.1%;
+}
+
+.weapon-attachment-label > p {
+    color: #ffffff;
+    font-size: 1.1vh;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.9vh;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 100;
+}
+
+.weapon-attachment-img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.5vw;
+}
+
+.weapon-attachment-img > img {
+    display:block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.weapon-attachments-remove {
+    position: absolute;
+    width: 6.5vh;
+    height: 6.5vh;
+    background-color: rgb(15, 15, 15);
+    border-radius: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 20vh;
+    text-align: center;
+    color: white;
+    font-size: 2vh;
+    transition: background-color .05s linear;
+}
+
+.weapon-attachments-remove:hover {
+    background-color: rgb(18, 18, 18);
+}
+
+.weapon-attachments-remove > i {
+    line-height: 6.5vh;
+}
+
+.weapon-attachments-remove-hover {
+    background-color: #F51A54;
+}
+
+.weapon-dragging-class {
+    animation: ShakeEffect .75s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ShakeEffect {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.weapon-attachments-back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10vh;
+    height: 6vh;
+    margin: 5vh;
+    background-color: rgb(15, 15, 15);
+    border-radius: 1px;
+    text-align: center;
+    line-height: 6vh;
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+    transition: .05s linear;
+}
+
+.weapon-attachments-back:hover {
+    background-color: rgb(18, 18, 18);
+}
