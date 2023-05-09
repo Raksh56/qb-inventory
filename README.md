@@ -1,5 +1,5 @@
 # qb-inventory
- Qb-Inventory Re-Designed By Raksh
+ Qb-Inventory Re-Designed By Raksh56
 
 ## Screenshots
 ![QBCORE Inventory](https://media.discordapp.net/attachments/1036234053256486953/1095657983607836672/Screenshot_2023-04-04_033657.png?width=1177&height=662)
